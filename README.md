@@ -13,9 +13,14 @@ Installation
 To install the project, follow these steps:
 
 Clone the repository: git clone https://github.com/valentina2509/blockchain-social-media-authenticator.git
-Install the dependencies: pip install -r requirements.txt
+
+Install the dependencies: pip install -r requirements.txt OR pip3 install -r requirements.txt
+
 Configure the system: cp config.example.py config.py and modify config.py as needed
-Run the system: python main.py
+
+Run the system: python main.py OR python3 main.py
+
+
 Usage
 
 To use the system, you can interact with it using HTTP requests. The following endpoints are available:
@@ -24,6 +29,8 @@ POST /register: Register a new user. Requires username and password in the reque
 POST /login: Authenticate a user. Requires username and password in the request body.
 POST /blind_signature: Generate a blind signature. Requires message in the request body.
 POST /receive_block: Receive a block in the blockchain. Requires public_key, blind_signature, and message in the request body.
+
+
 Testing
 
 To run the tests, use the following command: python -m unittest discover -v
